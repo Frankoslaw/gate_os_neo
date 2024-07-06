@@ -4,13 +4,16 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+limine = "0.2.0"
+
 lazy_static = { version = "1.4.0", features = ["spin_no_std"] }
 libm = "0.2.8"
 spin = "0.9.8"
-limine = "0.2.0"
 
-[build-dependencies]
-image = { version = "0.25.1", default-features = false, features = ["png"] }
+embedded-graphics = "0.8.1"
+embedded-graphics-core = "0.4.0"
+embedded-text = { version="0.7.0", features = ["ansi"]}
+noto-sans-mono-bitmap = "0.3.0"
 
 [profile.dev]
 panic = 'abort'
